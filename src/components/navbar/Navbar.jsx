@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import style from './navbar.module.css'
 
 
 const links = [
@@ -41,7 +42,7 @@ const Navbar = () => {
   return (
     <div>
         <Link href="/">Lamamia</Link>
-        <div>
+        <div className={style.container}>
             {links.map(link=>(
                 <Link key={link.id} href={link.url}>{link.title}</Link>
             ))}
