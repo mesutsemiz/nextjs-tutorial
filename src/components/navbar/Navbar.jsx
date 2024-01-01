@@ -40,9 +40,9 @@ const links = [
 const Navbar = () => {
 
   return (
-    <div>
+    <div  className={style.container}>
         <Link href="/">Lamamia</Link>
-        <div className={style.container}>
+        <div >
             {links.map(link=>(
                 <Link key={link.id} href={link.url}>{link.title}</Link>
             ))}
