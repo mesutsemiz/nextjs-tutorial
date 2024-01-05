@@ -4,7 +4,7 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 
 const Category = ({ params }) => {
-  console.log({ params });
+ 
   return (
     <div className={style.container}>
       <h1 className={style.catTitle}>{params.category}</h1>
